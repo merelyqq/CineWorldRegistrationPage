@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CineWorld</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-<div class="headerContainer">
-
-</div>
-</header>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CineWorld</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/styles/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="headerContainer">
+                <a href="index.html" class="logo">
+                    <img src="image/Icon.png" alt="#" />
+                    <h1>CineWorld</h1>
+                </a>
+                <div class="themeToggler">
+                    <button class="futureToggler"></button>
+                    <h2>Dark theme</h2>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </header>
+        <main>
+            <form action="">
+                <div class="registrationForm">
+                    <h1>Register for CineWorld</h1>
+                    <div class="labelsContainer">
+                        <label for="firstName">
+                            First Name
+                            <input
+                                type="text"
+                                placeholder="Thomas"
+                                class="customInput"
+                                minlength="2"
+                                required
+                            />
+                        </label>
+                        <label for="lastName">
+                            Last Name
+                            <input
+                                type="text"
+                                placeholder="Edison"
+                                class="customInput"
+                                minlength="2"
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div class="labelsContainer">
+                        <!-- TODO не доделано -->
+                        <label for="dateOfBirth">
+                            Date of Birth
+                            <input
+                                type="date"
+                                placeholder="DD.MM.YYYY"
+                                class="customInput"
+                            />
+                        </label>
+                        <label for="email">
+                            Email
+                            <input
+                                type="email"
+                                placeholder="email@email.ru"
+                                class="customInput"
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div class="labelsContainer">
+                        <label for="password">
+                            Password
+                            <input
+                                type="password"
+                                placeholder="*******"
+                                class="customInput"
+                                minlength="6"
+                                required
+                            />
+                        </label>
+                        <label for="repeatPassword">
+                            Repeat Password
+                            <input
+                                type="password"
+                                placeholder="*******"
+                                class="customInput"
+                                minlength="6"
+                                required
+                            />
+                        </label>
+                    </div>
+                    <!-- TODO не доделано -->
+                    <div class="favouriteGenre">
+                        <label for="favouriteGenre">
+                            Select your favourite genre
+                            <select name="genre" class="customInput">
+                                <option value="none">Favourite genre</option>
+                                <option value="comedy">Comedy</option>
+                                <option value="horror">Horror</option>
+                                <option value="adventure">Adventure</option>
+                                <option value="documentary">Documentary</option>
+                                <option value="cartoon">Cartoon</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit"></button>
+            </form>
+        </main>
+    </body>
 </html>

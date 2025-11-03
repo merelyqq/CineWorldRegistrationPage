@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  color: #440a8f;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #440a8f;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background: #ecf6fe;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 5.926vh;
+}
+header .headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 61.927vw;
+  padding: 1.481vh 0 1.481vh 0;
+}
+header .headerContainer .logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+header .headerContainer .logo img {
+  width: 32px;
+  height: 32px;
+}
+header .headerContainer .themeToggler {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+header .headerContainer .themeToggler .futureToggler {
+  width: 2.708vw;
+  height: 2.407vh;
+}
+header .divider {
+  width: 1381px;
+  border: 1px solid #440a8f;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+main .registrationForm {
+  margin: 4.444vh 5.208vw;
+  padding: 2.222vh 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.778vh;
+}
+main .registrationForm .labelsContainer {
+  display: flex;
+  gap: 0.833vw;
+}
+main .registrationForm h1 {
+  text-align: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  color: #242527;
+  margin: 0;
+}
+
+input {
+  width: 25.339vw;
+  height: 4.63vh;
+  border: 2px solid #8f6cbc;
+  border-radius: 10px;
+  padding: 1.111vh 1.042vw;
+}
+
+select {
+  width: 51.51vw;
+  height: 4.63vh;
+  border: 2px solid #8f6cbc;
+  border-radius: 10px;
+  padding: 0 1.042vw;
+}
+
+input::-moz-placeholder {
+  color: #8f6cbc;
+}
+
+input::placeholder {
+  color: #8f6cbc;
+}
+
+.customInput {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #242527;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border: 2px solid #440a8f;
+}/*# sourceMappingURL=style.css.map */

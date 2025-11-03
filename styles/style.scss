@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+$violet: #440a8f;
+$violetLight: #8f6cbc;
+$black: #242527;
+$red: #e7472d;
+$font: "Space Mono";
+
+h1 {
+    font-family: $font;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
+    color: $violet;
+    margin: 0;
+}
+
+h2 {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: $violet;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: #ecf6fe;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5.926vh;
+    .headerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 61.927vw;
+        padding: 1.481vh 0 1.481vh 0;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .themeToggler {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            .futureToggler {
+                width: 2.708vw;
+                height: 2.407vh;
+            }
+        }
+    }
+    .divider {
+        width: 1381px;
+        border: 1px solid $violet;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    .registrationForm {
+        margin: 4.444vh 5.208vw;
+        padding: 2.222vh 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2.778vh;
+        .labelsContainer {
+            display: flex;
+            gap: 0.833vw;
+        }
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    color: $black;
+    margin: 0;
+}
+
+// TODO у инпута и селекта много одинаковых параметров надо что-то переделать пока не знаю как
+input {
+    width: 25.339vw;
+    height: 4.63vh;
+    border: 2px solid $violetLight;
+    border-radius: 10px;
+    padding: 1.111vh 1.042vw;
+}
+
+select {
+    width: 51.51vw;
+    height: 4.63vh;
+    border: 2px solid $violetLight;
+    border-radius: 10px;
+    padding: 0 1.042vw;
+}
+
+input::placeholder {
+    color: $violetLight;
+}
+
+.customInput {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: $black;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid $violet;
+}
