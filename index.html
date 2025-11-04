@@ -97,7 +97,7 @@
                     <div class="favouriteGenre">
                         <label for="favouriteGenre">
                             Select your favourite genre
-                            <select name="genre" class="customInput">
+                            <select name="genre">
                                 <option value="none">Favourite genre</option>
                                 <option value="comedy">Comedy</option>
                                 <option value="horror">Horror</option>
@@ -107,8 +107,19 @@
                             </select>
                         </label>
                     </div>
+                    <!-- todo не доделано -->
+                    <div class="checkboxes">
+                        <label for="subscribeCheckbox" class="checkboxLabel">
+                            <input type="checkbox" class="checkboxik">
+                            Subscribe to the latest updates of site materials
+                        </label>
+                        <label for="personalDataCheckbox" class="checkboxLabel">
+                            <input type="checkbox" class="checkboxik">
+                            I accept the terms of the "Personal Data Processing Policy" and, for the purpose of establishing feedback with me, I consent to the processing of my personal data.
+                        </label>
+                    </div>
+                    <button type="submit" id="registerButton">REGISTER</button>
                 </div>
-                <button type="submit"></button>
             </form>
         </main>
     </body>

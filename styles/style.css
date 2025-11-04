@@ -73,6 +73,7 @@ main .registrationForm {
   padding: 2.222vh 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2.778vh;
 }
 main .registrationForm .labelsContainer {
@@ -94,20 +95,23 @@ label {
   margin: 0;
 }
 
-input {
-  width: 25.339vw;
-  height: 4.63vh;
-  border: 2px solid #8f6cbc;
-  border-radius: 10px;
-  padding: 1.111vh 1.042vw;
-}
-
 select {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8f6cbc;
+  margin: 0;
   width: 51.51vw;
   height: 4.63vh;
   border: 2px solid #8f6cbc;
   border-radius: 10px;
   padding: 0 1.042vw;
+  transition: 0.35s;
+}
+
+option:hover {
+  background-color: #ecf6fe;
 }
 
 input::-moz-placeholder {
@@ -119,6 +123,12 @@ input::placeholder {
 }
 
 .customInput {
+  width: 25.339vw;
+  height: 4.63vh;
+  border: 2px solid #8f6cbc;
+  border-radius: 10px;
+  padding: 1.111vh 1.042vw;
+  transition: 0.35s;
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 400;
@@ -130,4 +140,42 @@ input:focus,
 select:focus {
   outline: none;
   border: 2px solid #440a8f;
+  transition: 0.35s;
+}
+
+.checkboxik {
+  width: 24px;
+  height: 24px;
+  background: #FFFFFF;
+  outline: none;
+  border: 2px solid #8f6cbc;
+  border-radius: 6px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkboxLabel {
+  display: flex;
+  flex-direction: row;
+  width: 51.51vw;
+  gap: 12px;
+}
+
+#registerButton {
+  width: 7.969vw;
+  height: 5.556vh;
+  border: #242527;
+  border-radius: 10px;
+  background-color: #242527;
+  opacity: 50%;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

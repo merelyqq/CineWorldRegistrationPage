@@ -8,6 +8,7 @@ $violet: #440a8f;
 $violetLight: #8f6cbc;
 $black: #242527;
 $red: #e7472d;
+$background: #ecf6fe;
 $font: "Space Mono";
 
 h1 {
@@ -30,7 +31,7 @@ h2 {
 
 body {
     margin: 0;
-    background: #ecf6fe;
+    background: $background;
 }
 
 header {
@@ -78,6 +79,7 @@ main {
         padding: 2.222vh 0;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 2.778vh;
         .labelsContainer {
             display: flex;
@@ -101,20 +103,33 @@ label {
 }
 
 // optimize у инпута и селекта много одинаковых параметров надо что-то переделать пока не знаю как
-input {
-    width: 25.339vw;
-    height: 4.63vh;
-    border: 2px solid $violetLight;
-    border-radius: 10px;
-    padding: 1.111vh 1.042vw;
-}
+// input {
+//     width: 25.339vw;
+//     height: 4.63vh;
+//     border: 2px solid $violetLight;
+//     border-radius: 10px;
+//     padding: 1.111vh 1.042vw;
+//     transition: 0.35s;
+// }
 
 select {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: $violetLight;
+    margin: 0;
     width: 51.51vw;
     height: 4.63vh;
     border: 2px solid $violetLight;
     border-radius: 10px;
     padding: 0 1.042vw;
+    transition: 0.35s;
+}
+
+// fix
+option:hover {
+    background-color: $background;
 }
 
 input::placeholder {
@@ -122,6 +137,12 @@ input::placeholder {
 }
 
 .customInput {
+    width: 25.339vw;
+    height: 4.63vh;
+    border: 2px solid $violetLight;
+    border-radius: 10px;
+    padding: 1.111vh 1.042vw;
+    transition: 0.35s;
     font-family: $font;
     font-style: normal;
     font-weight: 400;
@@ -133,4 +154,42 @@ input:focus,
 select:focus {
     outline: none;
     border: 2px solid $violet;
+    transition: 0.35s;
+}
+
+.checkboxik {
+    width: 24px;
+    height: 24px;
+    background: #FFFFFF;
+    outline: none;
+    border: 2px solid $violetLight;
+    border-radius: 6px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkboxLabel {
+    display: flex;
+    flex-direction: row;
+    width: 51.51vw;
+    gap: 12px;
+}
+
+#registerButton {
+    width: 7.969vw;
+    height: 5.556vh;
+    border: $black;
+    border-radius: 10px;
+    background-color: $black;
+    opacity: 50%;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
