@@ -89,7 +89,6 @@ label {
   flex-direction: column;
   font-family: "Space Mono";
   font-weight: 700;
-  font-style: Bold;
   font-size: 16px;
   color: #242527;
   margin: 0;
@@ -134,6 +133,27 @@ input::placeholder {
   font-weight: 400;
   font-size: 16px;
   color: #242527;
+}
+
+.dateOfBirth {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 25.339vw;
+  height: 4.63vh;
+  border: 2px solid #8f6cbc;
+  border-radius: 10px;
+  padding: 0 0 0 1.042vw;
+  transition: 0.35s;
+  cursor: text;
+}
+.dateOfBirth p {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8f6cbc;
+  margin: 0;
 }
 
 input:focus,

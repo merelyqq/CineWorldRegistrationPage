@@ -10,6 +10,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/styles/style.css" />
+        <link rel="script" href="dateOfBirth.js">
     </head>
     <body>
         <header>
@@ -55,11 +56,12 @@
                         <!-- fix не доделано -->
                         <label for="dateOfBirth">
                             Date of Birth
-                            <input
-                                type="date"
-                                placeholder="DD.MM.YYYY"
-                                class="customInput"
-                            />
+                            <button 
+                                type="button"
+                                class="dateOfBirth" 
+                                id="dateOfBirthButton">
+                                <p>DD.MM.YYYY</p>
+                            </button>
                         </label>
                         <label for="email">
                             Email
@@ -122,5 +124,6 @@
                 </div>
             </form>
         </main>
+        <script src="dateOfBirth.js"></script>
     </body>
 </html>
